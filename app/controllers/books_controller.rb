@@ -18,6 +18,11 @@ class BooksController < ApplicationController
     render json: @book
   end
 
+  def all
+    @books = Book.all
+    render json: @books
+  end
+
   private 
   def set_book
     @book = Book.find(params[:id])

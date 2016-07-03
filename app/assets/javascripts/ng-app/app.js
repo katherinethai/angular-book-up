@@ -40,6 +40,16 @@ angular
             return BooksService.getBook($stateParams.id);
           }]
         }
+      })
+      .state('all', {
+        url: '/all',
+        templateUrl: 'books/all.html',
+        controller: 'BooksController as books',
+        resolve: {
+          books: ['BooksService', function (BooksService) {
+            return BooksService.getBooks();
+          }]
+        }
       });
 
       $urlRouterProvider.otherwise('/');

@@ -1,0 +1,18 @@
+<table class="table">
+  <tr>
+    <td><h3>Title</h3></td>
+    <td><h3>Author</h3></td>
+    <td><h3>Genre</h3></td>
+    <td><h3>Cover</h3></td>
+    <td><h3>Amazon</h3></td>
+    <td><h3>Edit</h3></td>
+  </tr>
+  <tr ng-repeat="book in books.data">
+    <td>{{ book.title }}</td>
+    <td>{{ book.author }}</td>
+    <td>{{ book.genre }}</td>
+    <td><img id="small-cover" src="{{ book.img_link }}" alt="book cover"></td>
+    <td><a href="{{ book.amazon_link }}">Link</a></td>
+    <td><a href="/books/{{ book.id }}/edit">Edit</a></td>
+  </tr>
+</table>
