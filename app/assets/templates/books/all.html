@@ -1,3 +1,14 @@
+<input ng-model="search.title" placeholder="Search by title" autofocus/>
+<input ng-model="search.author" placeholder="Search by author" autofocus/>
+<input ng-model="search.genre" placeholder="Search by genre" autofocus/>
+
+
+Sort by:
+
+<a href="" ng-click="sorter='title'">Title</a> |
+<a href="" ng-click="sorter='author'">Author</a> |
+<a href="" ng-click="sorter='genre'">Genre</a> |
+
 <table class="table">
   <tr>
     <td><h3>Title</h3></td>
@@ -7,7 +18,7 @@
     <td><h3>Amazon</h3></td>
     <td><h3>Edit</h3></td>
   </tr>
-  <tr ng-repeat="book in books.data">
+  <tr ng-repeat="book in books.data | filter: search | orderBy :sorter">
     <td>{{ book.title }}</td>
     <td>{{ book.author }}</td>
     <td>{{ book.genre }}</td>

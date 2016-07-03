@@ -3,7 +3,12 @@
 <form action="">
   <div class="form-group">
     <label for="title">Title</label>
-    <input type="text" class="form-control" id="title" ng-model="addBook.title">
+    <input 
+      type="text" 
+      class="form-control" 
+      id="title" 
+      ng-model="addBook.title"
+      required>
   </div>
 
   <div class="form-group">
@@ -28,7 +33,11 @@
 
   <div class="form-group">
     <label for="text">Text of first page</label>
-    <textarea class="form-control" id="text" ng-model="addBook.text"></textarea>
+    <textarea 
+      class="form-control" 
+      id="text" 
+      ng-model="addBook.text"
+      required></textarea>
   </div>
 
   <div class="actions">
