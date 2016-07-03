@@ -25,6 +25,21 @@ angular
             return BooksService.getRandomBook();
           }]
         }
+      })
+      .state('add', {
+        url: '/add',
+        templateUrl: 'books/new.html',
+        controller: 'AddBookController as addBook'
+      })
+      .state('show', {
+        url: '/books/:id',
+        templateUrl: 'books/show.html',
+        controller: 'BookController as book',
+        resolve: {
+          book: ['$stateParams', 'BooksService', function ($stateParams, BooksService) {
+            return BooksService.getBook($stateParams.id);
+          }]
+        }
       });
 
       $urlRouterProvider.otherwise('/');

@@ -1,1 +1,11 @@
 <p>{{ book.data.text }}</p>
+
+<div class="btn-group">
+  <div class="btn">
+    <a href="/#/books/{{ book.data.id }}" class="btn-default btn">Reveal Book</a>
+  </div>
+
+  <div class="btn">
+      <input ng-click="book.getRandomBook()" class="btn-default btn" type="submit" value="Next Book" id="submit">
+  </div>
+</div>
