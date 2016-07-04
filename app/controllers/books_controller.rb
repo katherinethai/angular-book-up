@@ -4,9 +4,9 @@ class BooksController < ApplicationController
     render json: @book
   end
 
-  def new
-    @book = Book.new
-  end
+  # def new
+  #   @book = Book.new
+  # end
 
   def create
     @book = Book.create(book_params)
@@ -21,6 +21,12 @@ class BooksController < ApplicationController
   def all
     @books = Book.all
     render json: @books
+  end
+
+  def update
+    set_book
+    @book.update(book_params)
+    render json: @book
   end
 
   private 

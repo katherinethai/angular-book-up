@@ -1,9 +1,5 @@
 angular 
-  .module('app', [
-    'ngAnimate',
-    'ui.router',
-    'templates'
-    ])
+  .module('app', ['ngAnimate','ui.router','templates'])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
       .state('home', {
@@ -50,7 +46,26 @@ angular
             return BooksService.getBooks();
           }]
         }
+      })
+      .state('settings', {
+        url: '/settings/:id',
+        templateUrl: 'settings/settings.html',
+        controller: 'SettingsController as settings',
+        resolve: {
+          book: ['$stateParams', 'BooksService', function ($stateParams, BooksService) {
+            return BooksService.getBook($stateParams.id);
+          }]
+        }
+      })
+      .state('settings.show', {
+        url: '/show',
+        templateUrl: 'settings/show.html',
+        controller: 'ShowSettingsController as show'
+      })
+      .state('settings.edit', {
+        url: '/edit',
+        templateUrl: 'settings/edit.html',
+        controller: 'EditSettingsController as edit'
       });
-
       $urlRouterProvider.otherwise('/');
   });

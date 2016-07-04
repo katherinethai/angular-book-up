@@ -1,47 +1,58 @@
 <h2>Add Book</h2>
 
-<form action="">
+<form name="addBook">
   <div class="form-group">
     <label for="title">Title</label>
     <input 
       type="text" 
+      name="title"
       class="form-control" 
       id="title" 
-      ng-model="addBook.title"
-      required>
+      ng-model="addBook.book.title"
+      required="required">
+
+    <div ng-if="addBook.title.$touched && addBook.title.$error.required">
+      Title is required!
+    </div>
   </div>
+
+
 
   <div class="form-group">
     <label for="author">Author</label>
-    <input type="text" class="form-control" id="author" ng-model="addBook.author">
+    <input type="text" class="form-control" id="author" ng-model="addBook.book.author">
   </div>
 
   <div class="form-group">
     <label for="genre">Genre</label>
-    <input type="text" class="form-control" id="genre" ng-model="addBook.genre">
+    <input type="text" class="form-control" id="genre" ng-model="addBook.book.genre">
   </div>
 
   <div class="form-group">
     <label for="img_link">Image Link</label>
-    <input type="text" class="form-control" id="img_link" ng-model="addBook.img_link">
+    <input type="text" class="form-control" id="img_link" ng-model="addBook.book.img_link">
   </div>
 
   <div class="form-group">
     <label for="amazon_link">Amazon Link</label>
-    <input type="text" class="form-control" id="amazon_link" ng-model="addBook.amazon_link">
+    <input type="text" class="form-control" id="amazon_link" ng-model="addBook.book.amazon_link">
   </div>
 
   <div class="form-group">
     <label for="text">Text of first page</label>
     <textarea 
-      class="form-control" 
+      class="form-control"
+      name="text" 
       id="text" 
-      ng-model="addBook.text"
-      required></textarea>
+      ng-model="addBook.book.text"
+      required="required"></textarea>
+    <div ng-if="addBook.text.$touched && addBook.text.$error.required">
+      Text is required!
+    </div>
   </div>
 
   <div class="actions">
-    <input ng-click="addBook.create()" type="submit" id="submit" class="btn btn-default" value="Submit">
+    <input ng-click="create()" type="submit" id="submit" class="btn btn-default" value="Submit">
   </div>
 
 </form>

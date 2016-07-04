@@ -16,6 +16,10 @@ function BooksService($http) {
   this.addBook = function(data) {
     return $http.post(API_URL + '/books', data);
   }
+
+  this.editBook = function(data, id) {
+    return $http.put(API_URL + '/books/' + id, data);
+  }
 }
 
 angular 
