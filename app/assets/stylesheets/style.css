@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200);
+
+body {
+  background-image: url("http://www.oshayspub.com/wp-content/uploads/2014/07/darkwood-plank-1024x718.jpg");
+  background-size: 100%;
+}
+
+p {
+  border-color: #F5F5F5;
+  border-radius: 25px;
+  padding: 20px;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 46%;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+#brand {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 40pt;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+}
+
+#contact h2 {
+  font-size: 30pt;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2, #h2
+{
+  font-family: 'Raleway', sans-serif;
+  font-size: 40pt;
+  text-align: center;
+  color: #FFFFFF;
+  
+}
+h3, #h3
+{
+  font-family: 'Raleway', sans-serif;
+  font-size: 24pt;
+  text-align: center;
+  color: #FFFFFF;
+}
+h4, #h4
+{
+  font-family: 'Raleway', sans-serif;
+  font-size: 13pt;
+  text-align: center;
+  color: #FFFFFF;
+}
+a
+{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18pt;
+  text-align: center;
+}
+a:link, a:visited
+{
+  color: #FFFFFF;
+}
+a:hover
+{
+  color: #92B6D5;
+  text-decoration: none;
+}
+body
+{
+  background-image: url("http://www.oshayspub.com/wp-content/uploads/2014/07/darkwood-plank-1024x718.jpg");
+  color: #FFFFFF;
+  font-family: 'Source Serif Pro', serif;
+}
+
+#home-page, .home-page {
+  text-align: center;
+}
+
+.carousel-control {
+  position: fixed;
+}
+
+.form-horizontal {
+  width: 40%;
+}
+
+
+#submit
+{
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 20pt;
+  display: inline-block;
+  border-color: #92B6D5;
+  border-radius: 10px;
+  padding: 20px;
+  color: #FFFFFF;
+  background-color:#92B6D5;
+  text-decoration: none;
+
+}
+
+#button3
+{
+  float: right;
+  margin-right: 200px;
+  padding: 20px;
+}
+
+#button4 {
+  text-align: center;
+}
+
+#button5 {
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+}
+
+#about
+{
+  float: left;
+  margin-left:200px;
+  text-decoration: none;
+}
+#contribute
+{
+  float: right;
+  margin-right: 200px;
+  text-decoration: none;
+}
+#submit:hover {
+   border: none;
+   background: #4C6A92;;
+}
+
+div.form {
+  display: block;
+  text-align: center;
+}
+
+table {
+  text-align: center;
+}
+
+form.form-horizontal
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+img.about {
+  display: block;
+  height: 550px;
+  width: 750px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+img.cover 
+{
+  display: block;
+  height: 800px;
+  width: 530px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+
+img#small-cover {
+  height: 50px;
+  width: 32px;
+}
+
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    margin-top: 30%;
+    margin-bottom: 30%
+}
+
+input[type="text"] {
+  font-size: 15pt;
+}
+
+textarea.form-control {
+  font-size: 13pt;
+}
+
+label, em {
+  font-size: 25px;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+i {
+  font-size: 15px;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif; 
+}
+
+div.first p {
+  text-align: center;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 48pt;
+}
+
+div.book p {
+  text-align: left;
+}
+
+form {
+  color: black;
+  font-family: 'Source Serif Pro', serif; 
+  font-size: 15pt;
+  text-align: center;
+}
+
+.btn {
+  box-shadow: none;
+}
+
+.container-fluid {
+  padding: 15px;
+}
+
+#navbar {
+  background-color: #92B6D5;
+  border-color: #92B6D5;
+}
+
+#navbar-link:hover, #navbar-link:focus {
+  color: #4C6A92; 
+}
+
+#navbar-link {
+  color: #FFFFFF; 
+}
+
+.glyphicon {
+  font-size: 30px;
+}
+
+#link
+{
+  color: #92B6D5;
+  font-size: 20px;
+}
+
+#link:hover
+{
+  color: #4C6A92;
+  text-decoration: none;
+}
+
+#center {
+  text-align: center;
+}
+
+

@@ -1,12 +1,14 @@
-<h2>{{ book.data.title }}</h2>
-<h3>{{ book.data.author }}</h3>
-<a href="{{ book.data.amazon_link }}">
-  <img class="cover" src="{{ book.data.img_link }}" alt="Go to Amazon" >
-</a>
-<div class="buttons">
-  <div class="btn-group">
-    <div class="btn">
-      <a class="btn-default btn" href="/#/books">New Book</a>
+<div id="center">
+  <h2 id="h2">{{ book.data.title }}</h2>
+  <h3 id="h3">{{ book.data.author }}</h3>
+  <a href="{{ book.data.amazon_link }}">
+    <img class="cover" src="{{ book.data.img_link }}" alt="Go to Amazon" >
+  </a>
+  <div class="buttons">
+    <div class="btn-group">
+      <div class="btn">
+        <a class="btn-default btn" id="submit" href="/#/books">New Book</a>
+      </div>
     </div>
   </div>
 </div>

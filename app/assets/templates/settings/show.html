@@ -1,15 +1,15 @@
-<h2>{{ show.data.title }}</h2><br>
+<h2 id="h2">{{ show.data.title }}</h2><br>
 
-<h3>{{ show.data.author }}</h3><br>
+<h3 id="h3">{{ show.data.author }}</h3><br>
 
-<h3>{{ show.data.genre }}</h3><br>
+<h3 id="h3">{{ show.data.genre }}</h3><br>
 
 <a href="{{ show.data.amazon_link }}">
   <img class="cover" src="{{ show.data.img_link }}" alt="{{ show.data.title }} cover">
 </a>
 
 <div class="book">
-  <h3>Text</h3><br>
+  <h3 id="h3">Text</h3><br>
   <p>{{ show.data.text }}</p>
 </div>
 <br>

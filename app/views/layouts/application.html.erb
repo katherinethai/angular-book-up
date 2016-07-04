@@ -10,9 +10,31 @@
   <%= csrf_meta_tags %>
 </head>
 <body ng-app="app">
-  <a href="/"><h1>Book Up</h1></a>
-  <a href="/#/about">About</a> - <a href="/#/books">Book me up!</a> - <a href="/#/add">Add Book</a> - <a href="/#/all">All Books</a>
-  
+  <nav id="navbar" class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="brand" href="/">Book Up</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><%= link_to "About", '/#/about', id: 'navbar-link' %></li>
+          <li><%= link_to "Book me up!", '/#/books', id: 'navbar-link' %></li>
+          <li><%= link_to "Add Book", '/#/add', id: 'navbar-link' %></li>
+          <li><%= link_to "All Books", '/#/all', id: 'navbar-link' %></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+  <h2 id="h2">Get hooked on a good book.</h2>
   <%= yield %>
 </body> 
 </html>
