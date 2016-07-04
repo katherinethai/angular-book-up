@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);
 @import url(https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
 @import url(https://fonts.googleapis.com/css?family=Quicksand:700);
@@ -8,7 +9,7 @@ body {
   background-size: 100%;
 }
 
-p {
+p, #p {
   border-color: #F5F5F5;
   border-radius: 25px;
   padding: 20px;
@@ -55,9 +56,11 @@ h3, #h3
 h4, #h4
 {
   font-family: 'Raleway', sans-serif;
-  font-size: 13pt;
-  text-align: center;
+  font-size: 20pt;
+  text-align: left;
+  display: inline;
   color: #FFFFFF;
+  padding: 10px;
 }
 a
 {
@@ -81,7 +84,7 @@ body
   font-family: 'Source Serif Pro', serif;
 }
 
-#home-page, .home-page {
+#home-page {
   text-align: center;
 }
 
@@ -270,4 +273,29 @@ form {
   text-align: center;
 }
 
+#addBook, #editBook {
+  width: 40%;
+}
 
+div.wrapper {
+  text-align: center;
+}
+
+#white-to-light-blue-link {
+  color: #FFFFFF;
+}
+
+#white-to-light-blue-link:hover {
+  color: #92B6D5;
+  text-decoration: none;
+}
+
+#tr {
+  color: #FFFFFF;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 20px;
+}
+
+#error {
+  color: yellow;
+}

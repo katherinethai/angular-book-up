@@ -1,29 +1,33 @@
-<input ng-model="search.title" placeholder="Search by title" autofocus/>
-<input ng-model="search.author" placeholder="Search by author" autofocus/>
-<input ng-model="search.genre" placeholder="Search by genre" autofocus/>
+<br><br>
+<div class="container">
+  <input ng-model="search.title" placeholder="Search by title" autofocus/>
+  <input ng-model="search.author" placeholder="Search by author" autofocus/>
+  <input ng-model="search.genre" placeholder="Search by genre" autofocus/>
 
 
-Sort by:
+  <h4 id="h4">Sort by:</h4>
 
-<a href="" ng-click="sorter='title'">Title</a> |
-<a href="" ng-click="sorter='author'">Author</a> |
-<a href="" ng-click="sorter='genre'">Genre</a> |
+  <h4 id="h4"><a href="" id="white-to-light-blue-link" ng-click="sorter='title'">Title</a> |
+  <a href="" id="white-to-light-blue-link" ng-click="sorter='author'">Author</a> |
+  <a href="" id="white-to-light-blue-link" ng-click="sorter='genre'">Genre</a> </h4>
 
-<table class="table">
-  <tr>
-    <td><h3>Title</h3></td>
-    <td><h3>Author</h3></td>
-    <td><h3>Genre</h3></td>
-    <td><h3>Cover</h3></td>
-    <td><h3>Amazon</h3></td>
-    <td><h3>Edit</h3></td>
-  </tr>
-  <tr ng-repeat="book in books.data | filter: search | orderBy :sorter">
-    <td>{{ book.title }}</td>
-    <td>{{ book.author }}</td>
-    <td>{{ book.genre }}</td>
-    <td><img id="small-cover" src="{{ book.img_link }}" alt="book cover"></td>
-    <td><a href="{{ book.amazon_link }}">Link</a></td>
-    <td><a href="#/settings/{{ book.id }}">Edit</a></td>
-  </tr>
-</table>
+
+  <table class="table">
+    <tr>
+      <td><h3 id="h3">Title</h3></td>
+      <td><h3 id="h3">Author</h3></td>
+      <td><h3 id="h3">Genre</h3></td>
+      <td><h3 id="h3">Cover</h3></td>
+      <td><h3 id="h3">Amazon</h3></td>
+      <td><h3 id="h3">Edit</h3></td>
+    </tr>
+    <tr id="tr" ng-repeat="book in books.data | filter: search | orderBy :sorter">
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.genre }}</td>
+      <td><img id="small-cover" src="{{ book.img_link }}" alt="book cover"></td>
+      <td><a href="{{ book.amazon_link }}" id="white-to-light-blue-link">Link</a></td>
+      <td><a href="#/settings/{{ book.id }}" id="white-to-light-blue-link">Edit</a></td>
+    </tr>
+  </table>
+</div>

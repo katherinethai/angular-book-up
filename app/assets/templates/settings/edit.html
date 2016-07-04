@@ -1,6 +1,6 @@
 <h2 id="h2">Edit Book</h2>
 
-<div class="container">
+<div class="container" id="editBook">
   <form name="editBook">
     <div class="form-group">
       <label for="title">Title</label>
@@ -40,16 +40,17 @@
         class="form-control"
         name="text" 
         id="text" 
-        ng-model="book.text"></textarea>
+        ng-model="book.text"
+        rows="8"></textarea>
 
     </div>
-
+    <br>
     <div class="actions">
       <input ng-click="update(edit.data.id)" type="submit" id="submit" class="btn btn-default" value="Submit">
     </div>
-
+  
   </form>
-
-  <div ui-view></div>
 </div>
+<br><br><br>
+
 
